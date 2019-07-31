@@ -17,7 +17,7 @@ public class App {
 
     public static void main(String[] args) throws InterruptedException {
         ApplicationContext context = SpringApplication.run(App.class, args);
-        logger.info("TBUK PSD2 Services started " + LocalDateTime.now());
+        logger.info("UMAI Rest Service started " + LocalDateTime.now());
         Thread.sleep(50000);
     }
 }

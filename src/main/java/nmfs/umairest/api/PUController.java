@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@Api(value="/storage",description="Linking Service",produces ="application/json")
+@Api(value="/PUController",description="Personal User Service",produces ="application/json")
 public class PUController {
 
     @RequestMapping(value="/nearByVenues",method= RequestMethod.GET)

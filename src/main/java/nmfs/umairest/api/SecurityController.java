@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@Api(value="/storage",description="Linking Service",produces ="application/json")
+@Api(value="/SecurityController",description="Security Service",produces ="application/json")
 @RequestMapping(value="/register",method= RequestMethod.GET)
 public class SecurityController {
 
