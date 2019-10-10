@@ -1,0 +1,25 @@
+@startuml
+
+hide empty description
+skinparam shadowing false
+
+skinparam state<<history>> {
+    backgroundColor transparent
+    borderColor transparent
+    fontSize 30
+}
+
+title History Demo
+[*] --> Closed
+Open --> Closed
+
+state Open {
+    [*] -r-> Red
+    Red -r-> Green
+    Green --> Yellow
+    Yellow --> Red
+    state "Ⓗ" as H<<history>>
+    Closed --> H
+}
+
+@enduml

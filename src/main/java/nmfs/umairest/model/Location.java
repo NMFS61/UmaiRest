@@ -11,13 +11,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Builder
-public class Person {
-
-    private int personId;
-    private String position;
-    private String title;
-    private String name;
-    private String email;
-    private String phone;
-
+public class Location {
+    private int x;
+    private int y;
 }
